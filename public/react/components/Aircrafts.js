@@ -1,6 +1,5 @@
 import React from 'react'
-import Image from './Image'
-import { Header } from './Header'
+
 
 export const Aircrafts = (props) => {
     return (
