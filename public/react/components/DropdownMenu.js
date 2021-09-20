@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import {Link} from 'react-router-dom'
 
 export default function SimpleMenu({ anchorEl, close }) {
     function handleClose() {
@@ -15,13 +16,13 @@ export default function SimpleMenu({ anchorEl, close }) {
                 keepMounted
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
-            >
-                <MenuItem onClick={handleClose}>Aircraft Carriers</MenuItem>
-                <MenuItem onClick={handleClose}>Aircrafts</MenuItem>
-                <MenuItem onClick={handleClose}>About Us</MenuItem>
-                <MenuItem onClick={handleClose}>Help</MenuItem>
-                <MenuItem onClick={handleClose}>FAQ</MenuItem>
-                <MenuItem onClick={handleClose}>Partners</MenuItem>
+            >   
+                <Link to="/"><MenuItem onClick={handleClose}>Aircraft Carriers</MenuItem></Link>
+                <Link to="/aircrafts"><MenuItem onClick={handleClose}>Aircrafts</MenuItem></Link>
+                <Link to="/about"><MenuItem onClick={handleClose}>About Us</MenuItem></Link>
+                <Link to="/help"><MenuItem onClick={handleClose}>Help</MenuItem></Link>
+                <Link to="/FAQ"><MenuItem onClick={handleClose}>FAQ</MenuItem></Link>
+                <Link to="/partners"><MenuItem onClick={handleClose}>Partners</MenuItem></Link>
             </Menu>
         </div>
     );
