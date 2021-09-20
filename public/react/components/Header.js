@@ -1,6 +1,7 @@
 import React from "react";
 import SimpleMenu from './DropdownMenu'
 
+
 export const Header = () => {
 
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -18,7 +19,7 @@ export const Header = () => {
             <div className="header-content">
                 <header className="header">
                     <div className="topnav">
-                        <i className="fa fa-bars" style={{ "font-size": "2em" }} onClick={handleClick}></i>
+                        <i className="fa fa-bars" style={{ fontSize: "2em" }} onClick={handleClick}></i>
                     </div>
                     <div className="header-info">
                         <a href="#">
@@ -37,5 +38,6 @@ export const Header = () => {
         </div>
 
     )
+
 }
 
