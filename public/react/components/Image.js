@@ -8,6 +8,10 @@ import { MainGallery } from "./MainGallery";
 
 export const Image = (props) => {
 
+    console.log("props in image", props)
+    
+    
+
     const [details, setDetails] = useState(null)
 
     const showDetails = () => {
@@ -25,8 +29,17 @@ export const Image = (props) => {
         //     <h6>Location</h6>
         // </div>
         <div className="main-gallery-img-div">
-            <img onClick={!details ? showDetails: hideDetails} className="main-gallery-img" src={props.ship.src}/>
-            <button onClick={() => props.handleSelect(props.ship)}>Click to See/Clear</button>
+                 <div>
+                    <img onClick={!details ? showDetails: hideDetails} 
+                    className="main-gallery-img" style={{display:"flex", justifyContent:"center"}}
+                    src={props.ship.src} alt="aircraft carrier image"/>
+                   name: {props.ship.name} 
+                </div>
+                <br/>
+                <div style={{display:"flex", justifyContent:"center"}}>
+                 <button onClick={() => props.handleSelect(props.ship, props.single)}>Click to See/Clear</button> 
+                </div>
 		</div>
+
     )
 }

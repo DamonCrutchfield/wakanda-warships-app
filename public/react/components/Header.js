@@ -24,12 +24,12 @@ export const Header = () => {
                     <div className="header-info">
                         <a href="#">
                             <h1>Vibranium Warships</h1>
-                            <h5>Click to see list of aircrafts</h5>
+                            <h2>Click to see list of aircrafts</h2>
                         </a>
                     </div>
                     <div className="header-nav">
                         <input type="text" placeholder="Search.." />
-                        <button type="submit"><i className="fa fa-search"></i></button>
+                        <button type="submit"><i className="fa fa-search"></i>Search</button>
                     </div>
                 </header>
                 <SimpleMenu anchorEl={anchorEl} close={close} />
