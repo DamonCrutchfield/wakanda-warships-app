@@ -3,8 +3,16 @@ import SimpleMenu from './DropdownMenu'
 import { Search } from "./Search";
 
 
-export const Header = (props) => {
-console.log("what is props here in header", props)
+
+export const Header = () => {
+
+    /**
+     * Create search component that displays the search results to the UI
+     * Create event handler on search button of header
+     * Create onChange event on text input field
+     * Create a search filter function
+     */
+
     const [anchorEl, setAnchorEl] = React.useState(null);
 
     const handleClick = (event) => {
@@ -30,7 +38,7 @@ console.log("what is props here in header", props)
                     </div>
                     <div className="header-nav">
                         <input type="text" placeholder="Search.." />
-                        <button type="submit"><i className="fa fa-search"></i>Search</button>
+                        <button type="submit">Search</button>
                     </div>
                 </header>
                 <SimpleMenu anchorEl={anchorEl} close={close} />
