@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "name": "Aircraft1",
+      "name": "Talon Fighter",
       "image": "https://nationalinterest.org/sites/default/files/main_images/6862791594_949b1ccaa7_b.jpg",
       "role": "Fight",
       "model": "FighterJet125Qz11",
@@ -9,7 +9,7 @@
       "description": "Fight hard"
     },
     {
-      "name": "Aircraft2",
+      "name": "Dragon Flyer",
       "image": "http://www.military-today.com/aircraft/f22_raptor.jpg",
       "role": "Blow stuff up",
       "model": "Bomber-X12",
@@ -17,7 +17,7 @@
       "description": "Bombs a large area of land"
     },
     {
-      "name": "Aircraft3",
+      "name": "Royal Talon Fighter",
       "image": "http://www.military-today.com/aircraft/f35b.jpg",
       "role": "Spy",
       "model": "StealthMachine-1977",
