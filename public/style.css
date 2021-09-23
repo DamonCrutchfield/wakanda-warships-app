@@ -56,12 +56,16 @@
 } */
 .header {
   display: flex;
-  background-color: cornsilk;
+  background-color: white;
   flex-direction: row;
   padding: 24px 15px;
   text-align: center;
   margin: 0 1.5% 24px 1.5%;
   justify-content: space-evenly;
+}
+
+.fa-bars {
+  font-size: 10px;
 }
 
 a {
