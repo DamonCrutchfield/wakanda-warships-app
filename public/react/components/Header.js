@@ -1,6 +1,5 @@
 import React from "react";
 import SimpleMenu from './DropdownMenu'
-import { Search } from "./Search";
 
 
 
@@ -38,12 +37,10 @@ export const Header = () => {
                     </div>
                     <div className="header-nav">
                         <input type="text" placeholder="Search.." />
-                        <button type="submit">Search</button>
+                        <button style={{backgroundColor: "gray"}} type="submit">Search</button>
                     </div>
                 </header>
                 <SimpleMenu anchorEl={anchorEl} close={close} />
-                {/* {props.aircrafts.map((aircraft) =>
-                <Search aircraft={aircraft} />)} */}
             </div>
 
         </div>
