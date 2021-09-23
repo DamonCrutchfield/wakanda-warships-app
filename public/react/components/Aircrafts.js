@@ -17,7 +17,7 @@ export const Aircrafts = (props) => {
                                 <p class="card-title"><strong>Name: </strong>{aircraft.name}</p>
                                 <p class="card-text"><strong>Description: </strong>{aircraft.description}</p>
                                 <p class="card-text"><strong>Role: </strong>{aircraft.role}</p>
-                                <p class="card-text"><strong>Type: </strong>{aircraft.type}</p>
+                                {/* <p class="card-text"><strong>Type: </strong>{aircraft.type}</p> */}
                                 <p class="card-text"><strong>Model: </strong>{aircraft.model}</p>
                             </div>
                         </div>
