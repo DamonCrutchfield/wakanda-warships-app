@@ -1,23 +1,20 @@
 import React from 'react'
 
 //Create search component that displays the search results to the UI
-export const Search = () => {
+export const Search = (props) => {
     return (
         <div>
-            <img class="card-img-top" src="..." alt="Card image cap"/>
+            <img class="card-img-top" style={{"width": "25rem"}} src={props.aircraft.image} alt="Card image cap"/>
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Name:{props.aircraft.name}</h5>
+                <p class="card-text">{props.aircraft.description}</p>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+                <li class="list-group-item">{props.aircraft.role}</li>
+                <li class="list-group-item">{props.aircraft.type}</li>
+                <li class="list-group-item">{props.aircraft.model}</li>
             </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
+            
         </div>
     )
 }

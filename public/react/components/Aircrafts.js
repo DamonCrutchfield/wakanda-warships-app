@@ -11,13 +11,16 @@ export const Aircrafts = (props) => {
                 {
                     props.aircrafts.map((aircraft, index) => {
                         return (
-                            <div key={index} className="main-gallery" style={{"width": "18rem"}}>
-                                <div className="main-gallery-img-div">
-                                    <img className="main-gallery-img" src={aircraft.image} alt="Card image cap"/>
-                                    <h6>Name: {aircraft.name}</h6>
-                                    <p>Description: {aircraft.description}</p>
-                                </div>
+                            <div style={{justifyContent : "center", textAlign: "center"}}>
+                            <img class="card-img-top" style={{"width": "35rem"}} src={aircraft.image} alt="Card image cap"/>
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Name: </strong>{aircraft.name}</h5>
+                                <p class="card-text"><strong>Description: </strong>{aircraft.description}</p>
+                                <p class="card-text"><strong>Role: </strong>{aircraft.role}</p>
+                                <p class="card-text"><strong>Type: </strong>{aircraft.type}</p>
+                                <p class="card-text"><strong>Model: </strong>{aircraft.model}</p>
                             </div>
+                        </div>
                         )
                     })
                 }
@@ -26,3 +29,4 @@ export const Aircrafts = (props) => {
         </div>
     )
 }
+

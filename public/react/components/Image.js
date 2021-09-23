@@ -34,6 +34,9 @@ export const Image = (props) => {
                     className="main-gallery-img" style={{display:"flex", justifyContent:"center"}}
                     src={props.ship.src} alt="aircraft carrier image"/>
                    name: {props.ship.name} 
+                   <br/>
+                   number of Aircrafts: {props.aircrafts.length}
+
                 </div>
                 <br/>
                 <div style={{display:"flex", justifyContent:"center"}}>

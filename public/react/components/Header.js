@@ -1,5 +1,7 @@
 import React from "react";
 import SimpleMenu from './DropdownMenu'
+import { Search } from "./Search";
+
 
 
 export const Header = () => {
@@ -40,6 +42,8 @@ export const Header = () => {
                     </div>
                 </header>
                 <SimpleMenu anchorEl={anchorEl} close={close} />
+                {/* {props.aircrafts.map((aircraft) =>
+                <Search aircraft={aircraft} />)} */}
             </div>
 
         </div>
