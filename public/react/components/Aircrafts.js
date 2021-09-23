@@ -11,7 +11,7 @@ export const Aircrafts = (props) => {
                 {
                     props.aircrafts.map((aircraft, index) => {
                         return (
-                            <div style={{justifyContent : "center", textAlign: "center"}}>
+                            <div key={index} style={{justifyContent : "center", textAlign: "center"}}>
                             <img class="card-img-top" style={{"width": "35rem"}} src={aircraft.image} alt="Card image cap"/>
                             <div class="card-body">
                                 <p class="card-title"><strong>Name: </strong>{aircraft.name}</p>

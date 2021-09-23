@@ -9,7 +9,7 @@ export const Help = () => {
                 <ul id="help" className="list">
                     <li><strong>Leave Wakanda's Army</strong></li>
                     <p>Prepare to be executed!</p>
-                    <li><strong>Deliever Cargo</strong></li>
+                    <li><strong>Deliver Cargo</strong></li>
                     <p>Await messenger plane</p>
                     <li><strong>Change Aircraft Base</strong></li>
                     <p>We are all family</p>
