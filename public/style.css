@@ -56,13 +56,12 @@
 } */
 .header {
   display: flex;
-  background-color: black;
+  background-color: cornsilk;
   flex-direction: row;
   padding: 24px 15px;
   text-align: center;
   margin: 0 1.5% 24px 1.5%;
   justify-content: space-evenly;
-  color: white;
 }
 
 .fa-bars {
@@ -110,12 +109,10 @@ button {
   width: 20%;
   padding: 10px;
   background: #2196f3;
-  color: white;
   font-size: 17px;
   border: 1px solid grey;
   border-left: none; /* Prevent double borders */
   cursor: pointer;
-  background-color: gray;
 }
 
 .main-gutter {
@@ -173,8 +170,6 @@ button {
 }
 
 button {
-  background-color: black;
-  text-emphasis-color: white;
   width: 100px;
 }
 
