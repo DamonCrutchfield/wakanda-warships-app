@@ -6,7 +6,7 @@ export const Partners = () => {
             <div className="page-header">
                 <h1>Partners</h1>
             </div>
-                <ul className="list">
+                <ul id="partners" className="list">
                     <li>Stark Industries</li>
                     <li>Avengers</li>
                     <li>X-men</li>

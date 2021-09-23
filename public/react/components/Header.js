@@ -37,7 +37,7 @@ export const Header = () => {
                     </div>
                     <div className="header-nav">
                         <input type="text" placeholder="Search.." />
-                        <button style={{backgroundColor: "gray"}} type="submit">Search</button>
+                        <button  type="submit">Search</button>
                     </div>
                 </header>
                 <SimpleMenu anchorEl={anchorEl} close={close} />

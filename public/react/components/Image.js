@@ -33,9 +33,9 @@ export const Image = (props) => {
                     <img onClick={!details ? showDetails: hideDetails} 
                     className="main-gallery-img" style={{display:"flex", justifyContent:"center"}}
                     src={props.ship.src} alt="aircraft carrier image"/>
-                   name: {props.ship.name} 
+                   Name: {props.ship.name} 
                    <br/>
-                   number of Aircrafts: {props.aircrafts.length}
+                   Number of Aircrafts: {props.aircrafts.length}
 
                 </div>
                 <br/>
