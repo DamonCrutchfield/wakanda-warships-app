@@ -1,9 +1,10 @@
 import React from "react";
 import SimpleMenu from './DropdownMenu'
+import { Search } from "./Search";
 
 
-export const Header = () => {
-
+export const Header = (props) => {
+console.log("what is props here in header", props)
     const [anchorEl, setAnchorEl] = React.useState(null);
 
     const handleClick = (event) => {
@@ -33,6 +34,8 @@ export const Header = () => {
                     </div>
                 </header>
                 <SimpleMenu anchorEl={anchorEl} close={close} />
+                {/* {props.aircrafts.map((aircraft) =>
+                <Search aircraft={aircraft} />)} */}
             </div>
 
         </div>

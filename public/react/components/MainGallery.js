@@ -31,7 +31,7 @@ export const MainGallery = (props) => {
                     <section className="main-gallery">
                         {
                                 
-                            selected ? <Image ship={selected} single={true} handleSelect={handleSelect} /> : ships.map((ship, index) => <Image ship={ship} single={false} key={index} handleSelect={handleSelect} src={ship} />)         
+                            selected ? <Image ship={selected} aircrafts={props.aircrafts} single={true} handleSelect={handleSelect} /> : ships.map((ship, index) => <Image ship={ship} aircrafts={props.aircrafts} single={false} key={index} handleSelect={handleSelect} src={ship} />)         
                                 
                         }
                     </section>
