@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Partners = () => {
     return (
-        <div>
+        <div className="miscelaneous">
             <div className="page-header">
                 <h1>Partners</h1>
             </div>
