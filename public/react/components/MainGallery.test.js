@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer'
 import { MainGallery } from './MainGallery';
 
 describe("MainGallery component", () => {
-  //Snapshot test: Does our Component render as expected?
+  // Snapshot test: Does our Component render as expected?
   test("renders MainGallery component as expected", () => {
 	
     const ships = [{name:"aircraft-carrier1", 
@@ -19,7 +19,7 @@ describe("MainGallery component", () => {
 					}]
 
 	
-    const component = renderer.create(<MainGallery ships={ships} aircrafts={[]}/>)
+    const component = renderer.create(<MainGallery ships={[]} aircrafts={[]}/>)
 
     const snapshot = component.toJSON();
 
@@ -42,7 +42,7 @@ describe("MainGallery component", () => {
 					}]
 	const stub = () => 'clicked!!!';
 	
-    const component = renderer.create(<MainGallery ships={ships} aircrafts={[]} handleSelect={stub}/>)
+    const component = renderer.create(<MainGallery ships={[]} aircrafts={[]} handleSelect={stub}/>)
 
    
 	 //Let's unspool the tree

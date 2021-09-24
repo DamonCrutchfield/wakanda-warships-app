@@ -1,7 +1,6 @@
 import React from 'react';
 import { Image } from './Image';
 import { useState } from 'react';
-import {Link, Route} from 'react-router-dom'
 
 
 
@@ -10,10 +9,8 @@ import {Link, Route} from 'react-router-dom'
 export const MainGallery = (props) => {
         const [ships, setShips] = useState(props.ships)
         const [selected, setSelected] = useState(null)
-        const [single, setSingle] = useState(true)
 
         function handleSelect(ship, single){
-            console.log("what is Props.single?", single)
             if(single){
                 console.log('what is single?')
                 setSelected(null)

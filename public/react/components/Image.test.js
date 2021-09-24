@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer'
 import { Image } from './Image';
 
 describe("Image component", () => {
-  //Snapshot test: Does our Component render as expected?
+  // Snapshot test: Does our Component render as expected?
   test("renders Image component as expected", () => {
 	
     const ships = [{name:"aircraft-carrier1", 

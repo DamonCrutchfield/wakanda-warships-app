@@ -1,10 +1,10 @@
-import React from "react";
+import React, {useRef} from "react";
 import SimpleMenu from './DropdownMenu'
 
 
 
-export const Header = () => {
-
+export const Header = (props) => {
+const inputEl = useRef("")
     /**
      * Create search component that displays the search results to the UI
      * Create event handler on search button of header
@@ -21,6 +21,14 @@ export const Header = () => {
     function close() {
         setAnchorEl(null)
     }
+    
+   function getSearchValue () {
+     props.searchKeyWord(inputEl.current.value)
+   }
+
+   function searchClick(){
+       props.searchHandler()
+   }
 
     return (
         <div>
@@ -36,8 +44,13 @@ export const Header = () => {
                         </a>
                     </div>
                     <div className="header-nav">
-                        <input type="text" placeholder="Search.." />
-                        <button  type="submit">Search</button>
+                        <input 
+                        ref={inputEl}
+                        type="text" placeholder="Search.." 
+                        value={props.term} 
+                        onChange ={getSearchValue}
+                        />
+                        <button  type="submit"  onClick={searchClick}>Search</button>
                     </div>
                 </header>
                 <SimpleMenu anchorEl={anchorEl} close={close} />
